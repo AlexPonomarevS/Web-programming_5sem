@@ -1,1 +1,7 @@
-# Web-programming_5sem
+# Web-programming 5 semestr
+# ФИО:
+    Пономарев Александр
+# Группа: 
+    M33111
+# Тема: 
+    Интернет-магазин
