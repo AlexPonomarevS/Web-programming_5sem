@@ -2,31 +2,40 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --main-color: #87CEEB;
+    --add-color: #549BE3;
+    --add2-color: #FEFFF5;
+}
+
 .body{
-    background-color: #87CEEB;
+    background-color: var(--main-color);
     padding: 10px 20px 0;
 }
 .header{
-    font-family: Andale Mono, monospace;
+    font-family: Share Tech Mono, monospace;
     padding: 5px;
-    background-color: #549BE3;
+    background-color: var(--add-color);
     border-radius: 30px;
     margin-bottom: 10px;
-    border: 2px #FEFFF5 solid;
+    border: 2px var(--add2-color) solid;
 }
 .header__title {
     text-transform: uppercase;
     text-align: center;
-    color: #FEFFF5;
+    color: var(--add2-color);
+    font-weight: 550 ;
+    font-style: italic;
 }
 .header__blockquote {
     font-size: 20px;
     margin: 7px;
-    color: #FEFFF5;
+    color: var(--add2-color);
     text-align: right;
 }
 .header__menu{
-    color: #FEFFF5;
+    color: var(--add2-color);
     text-align: left;
     margin: 15px;
     margin-left: 50px;
@@ -34,7 +43,7 @@
 }
 .header__menu__ul__elem{
     display: inline-block;
-    background-color: #FEFFF5;
+    background-color: var(--add2-color);
     border-radius: 5px;
     padding: 3px;
     margin: 10px;
@@ -43,14 +52,14 @@
     text-decoration: none;
 }
 .main {
-    font-family: Andale Mono, monospace;
+    font-family: Share Tech Mono, monospace;
     padding: 15px;
-    background-color: #549BE3;
+    background-color: var(--add-color);
     border-radius: 30px;
-    border: 2px #FEFFF5 solid;
+    border: 2px var(--add2-color) solid;
 }
 .main__section{
-    background-color: #FEFFF5;
+    background-color: var(--add2-color);
     margin-bottom: 5px;
     border-radius: 10px 100px / 120px;
     padding: 10px 30px;
@@ -59,13 +68,13 @@
     letter-spacing: 4px;
     line-height: 40px;
     margin-bottom: 5px;
-    color: #549BE3;
-    font-family: Andale Mono, monospace;
+    color: var(--add-color);
+    font-family: Share Tech Mono, monospace;
 }
 .main__section__paragraph{
     text-indent: 40px;
-    color: #549BE3;
-    font-family: Andale Mono, monospace;
+    color: var(--add-color);
+    font-family: Share Tech Mono, monospace;
     margin-bottom: 20px;
 }
 .main__section__cardProduct{
@@ -78,26 +87,26 @@
     width: 300px;
     height: 300px;
     margin: auto;
-    border: #549BE3 solid 2px;
-    box-shadow: -2px 2px 5px #549BE3;
+    border: var(--add-color) solid 2px;
+    box-shadow: -2px 2px 5px var(--add-color);
 }
 .main__section__cardProduct__productName{
     font-size: 20px;
-    color: #549BE3;
+    color: var(--add-color);
     margin-bottom: 5px;
 }
 .main__section__cardProduct__productCost{
     font-size: 20px;
-    color: #549BE3;
+    color: var(--add-color);
 }
 .footer{
-    font-family: Andale Mono, monospace;
+    font-family: Share Tech Mono, monospace;
     padding: 10px;
-    background-color: #549BE3;
+    background-color: var(--add-color);
     border-radius: 30px;
     margin-bottom: 10px;
-    border: 2px #FEFFF5 solid;
-    color: #FEFFF5;
+    border: 2px var(--add2-color) solid;
+    color: var(--add2-color);
 }
 .footer__section__title{
     letter-spacing: 4px;
