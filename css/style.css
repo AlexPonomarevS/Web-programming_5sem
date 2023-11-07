@@ -173,5 +173,6 @@ thead, tbody, .grid-table-tr {
 }
 
 .active{
-    color: green;
+    background-color: green;
+    color: red;
 }
