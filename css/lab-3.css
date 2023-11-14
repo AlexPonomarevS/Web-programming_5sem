@@ -26,10 +26,11 @@
     text-align: right;
 }
 .header__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: #FEFFF5;
-    text-align: left;
-    margin: 15px;
-    margin-left: 50px;
+    margin: 15px 15px 15px 50px;
     font-size: 120%;
 }
 .header__menu__ul__elem{
@@ -120,7 +121,7 @@
     width: 1410px;
     height: 140px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1480px){
     .div__mediaScreen{
         display: none;
     }
