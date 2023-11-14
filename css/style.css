@@ -38,12 +38,12 @@
     display: inline-block;
     background-color: #FEFFF5;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
     margin: 10px;
 }
 
 .header__menu__ul__elem:hover{
-    background-color: var(--main-color);
+    background-color: skyblue;
 }
 
 .header__menu__ul__elem-a{
@@ -175,6 +175,8 @@ thead, tbody, .grid-table-tr {
 }
 
 .active{
-    background-color: green;
-    color: red;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
 }
