@@ -121,7 +121,7 @@
     width: 1410px;
     height: 140px;
 }
-@media screen and (max-width: 1480px){
+@media screen and (max-width: 1410px){
     .div__mediaScreen{
         display: none;
     }
