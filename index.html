@@ -6,9 +6,10 @@
         <meta name="description" content="Распродажа различных видов мячей">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">        <link rel="stylesheet" href="/Web-programming_5sem/css/lab-2.css">
         <link rel="stylesheet" href="/Web-programming_5sem/css/style.css">
         <script src="/Web-programming_5sem/scripts/script.js"></script>
+        <script src="/Web-programming_5sem/scripts/script_head.js"></script>
         <title>Интернет-магазин "Мячики"</title>
     </head>
     <body class="body">
@@ -21,15 +22,6 @@
                     <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cast.html">Корзина</a></li>
                     <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cooperation.html">Сотрудничество</a></li>
                 </ul>
-                <script>
-                    const currentUrl = document.location.href;
-                    const menuItems = document.querySelectorAll('.header__menu__ul__elem-a');
-                    menuItems.forEach(item => {
-                        if (item.getAttribute('href') === currentUrl) {
-                            item.classList.add('active');
-                        }
-                    });
-                </script>
             </nav>
             <blockquote class="header__blockquote">
                 <p class="header__blockquote__quote">Спорт - это жизнь!</p>
