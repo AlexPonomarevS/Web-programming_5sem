@@ -18,15 +18,7 @@
                     <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cast.html">Корзина</a></li>
                     <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cooperation.html">Сотрудничество</a></li>
                 </ul>
-                <script>
-                    const currentUrl = document.location.href;
-                    const menuItems = document.querySelectorAll('.header__menu__ul__elem-a');
-                    menuItems.forEach(item => {
-                        if (item.getAttribute('href') === currentUrl) {
-                            item.classList.add('active');
-                        }
-                    });
-                </script>
+                <script src="/Web-programming_5sem/scripts/script_head.js"></script>
             </nav>
             <h2 class="header__title" style="margin-top: 20px">Каталог</h2>
         </header>
