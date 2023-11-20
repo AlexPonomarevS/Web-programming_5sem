@@ -179,3 +179,52 @@ thead, tbody, .grid-table-tr {
     background-color: blue;
     color: white;
 }
+
+.delete_button{
+    margin: 7px 5px 7px 10px;
+    padding: 3px 5px;
+    border: solid blue 3px;
+    border-radius: 7px 0 7px 0;
+    background-color: white;
+    font-family: Yanone Kaffeesatz, monospace;
+    font-size: 1.2em;
+}
+
+.form_lab5{
+    text-align: center;
+    border-radius: 10px;
+    background-color: aqua;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid white 2px;
+}
+.wishesInput{
+    border-radius: 7px;
+    border: solid #549BE3 2px;
+    padding: 5px;
+}
+.add_button{
+    margin: 10px;
+    padding: 3px 5px;
+    border-radius: 7px;
+    border: solid white 2px;
+    background-color: #549BE3;
+    font-family: Yanone Kaffeesatz, monospace;
+    font-size: 1.2em;
+}
+.wishesList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li_wish{
+    text-align: center;
+    list-style: none;
+    background-color: #FEFFF5;
+    margin: 10px;
+    padding: 0 10px;
+    border-radius: 3px;
+    width: 20%;
+}
