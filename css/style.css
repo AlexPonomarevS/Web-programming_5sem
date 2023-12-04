@@ -26,16 +26,18 @@
     text-align: right;
 }
 .header__menu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: #FEFFF5;
-    text-align: left;
     margin: 15px 15px 15px 50px;
     font-size: 120%;
 }
 .header__menu__ul{
     display: flex;
+}
+
+@media screen and (max-width: 640px){
+    .header__menu__ul {
+        flex-direction: column;
+    }
 }
 .header__menu__ul__elem{
     display: inline-block;
