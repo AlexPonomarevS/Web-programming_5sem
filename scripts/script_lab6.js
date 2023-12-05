@@ -4,21 +4,20 @@ document.addEventListener('DOMContentLoaded', async function() {
     const refreshButton = document.getElementById('refresh');
     refreshButton.addEventListener('click', function() {
         flag = !flag;
-        updateRequest(flag, limit);
+        refreshData(flag, limit);
     })
-    await updateRequest(flag, limit);
+    await refreshData(flag, limit);
 });
 
-async function updateRequest(firstCall, limit) {
+async function refreshData(firstCall, limit) {
     const preloader = document.getElementById('preloader');
     const errorPlaceholder = document.createElement('div');
     let url = 'https://jsonplaceholder.typicode.com/users';
     if (firstCall) {
-        const limit = 7;
-        const randomStart = Math.floor(Math.random() * limit);
-        url += `?_start=${randomStart}&_limit=${limit}`;
+        const randomStart = Math.floor(Math.random() * 7);
+        url += `?_start=${randomStart}&_limit=7`;
     } else {
-        url += `?_start=${limit}&_limit=${limit}`;
+        url += `?_start=7&_limit=7`;
     }
     try {
         preloader.style.display = 'block';
