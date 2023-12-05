@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const wishesForm = document.getElementById('wishesForm');
     const wishesInput = document.getElementById('wishesInput');
     const wishesList = document.getElementById('wishesList');
@@ -10,18 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createWishesItem(wishesText) {
-        const wishesItem = document.createElement('li');
-        wishesItem.classList.add('li_wish');
-        wishesItem.textContent = wishesText;
-        const deleteButton = document.createElement('button');
-        deleteButton.classList.add('delete_button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.addEventListener('click', function() {
-            wishesItem.remove();
+        const template = document.getElementById('wishesItemTemplate');
+        const wishesItem = document.importNode(template.content, true);
+
+        const li = wishesItem.querySelector('.li_wish');
+        const deleteButton = wishesItem.querySelector('.delete_button');
+
+        li.textContent = wishesText;
+        deleteButton.addEventListener('click', function () {
+            li.remove();
+            deleteButton.remove();
             savedWishes = savedWishes.filter(item => item !== wishesText);
             updateLocalStorage();
         });
-        wishesItem.appendChild(deleteButton);
+
         wishesList.appendChild(wishesItem);
     }
 
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         createWishesItem(wishes);
     });
 
-    wishesForm.addEventListener('submit', function(event) {
+    wishesForm.addEventListener('submit', function (event) {
         event.preventDefault();
         const wishesText = wishesInput.value.trim();
         if (wishesText !== '') {
@@ -39,5 +41,4 @@ document.addEventListener('DOMContentLoaded', function() {
             wishesInput.value = '';
         }
     });
-
 });
