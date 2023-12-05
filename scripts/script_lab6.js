@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 async function refreshData(firstCall, limit) {
     const preloader = document.getElementById('preloader');
-    const errorPlaceholder = document.createElement('div');
+    const errPlace = document.createElement('div');
     let url = 'https://jsonplaceholder.typicode.com/users';
     if (firstCall) {
         const randomStart = Math.floor(Math.random() * 7);
@@ -32,8 +32,8 @@ async function refreshData(firstCall, limit) {
     } catch (error) {
         console.error('Error:', error);
         preloader.style.display = 'none';
-        errorPlaceholder.textContent = '⚠ Что-то пошло не так';
-        document.getElementById('staffList').appendChild(errorPlaceholder);
+        errPlace.textContent = '⚠ Что-то пошло не так';
+        document.getElementById('staffList').appendChild(errPlace);
     }
 }
 
