@@ -109,7 +109,6 @@
     margin: 10px 0;
     border: 2px #FEFFF5 solid;
     color: #FEFFF5;
-    height: 200px;
 }
 .footer__section{
     /*position: absolute;*/
@@ -229,7 +228,45 @@ thead, tbody, .grid-table-tr {
     list-style: none;
     background-color: #FEFFF5;
     margin: 10px;
-    padding: 0 10px;
+    padding: 10px;
     border-radius: 3px;
     width: 20%;
+}
+
+.preloader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.staff{
+    color: white;
+}
+.staff_title{
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+.staffList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.staff{
+    padding: 10px;
+    border: #FEFFF5 solid 2px;
+    margin: 5px;
+}
+
+.refresh_button{
+    color: white;
 }

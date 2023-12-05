@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
         <script src="/Web-programming_5sem/scripts/script.js"></script>
+        <script src="/Web-programming_5sem/scripts/script_lab6.js"></script>
         <title>Интернет-магазин "Мячики"</title>
     </head>
     <body class="body">
@@ -23,14 +24,26 @@
                 </ul>
                 <script src="/Web-programming_5sem/scripts/script_head.js"></script>
             </nav>
-            <h2 class="header__title" style="margin-top: 20px">Сотрудничество</h2>
+            <h2 class="header__title" style="margin-top: 20px;">Сотрудничество</h2>
         </header>
         <main class="main">
             <section id="about" class="main__section about">
                 <h2 class="main__section__title about">Сотрудничество</h2>
             </section>
-            <section id="products" class="main__section">
-                <h2 class="main__section__title">Пример</h2>
+            <section class="staff">
+                <h2 class="staff_title">Сотрудники</h2>
+                <ul>
+                    <div id="staffList" class="staffList"></div>
+                    <div id="preloader" class="preloader"></div>
+                    <template id="staffTemplate">
+                        <div class="staff">
+                            <p class="email"></p>
+                            <p class="name"></p>
+                            <p class="phone"></p>
+                        </div>
+                    </template>
+                    <button id="refresh" class="add_button refresh_button">Отобразить сотрудников</button>
+                </ul>
             </section>
         </main>
         <footer class="footer">
