@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     refreshButton.addEventListener('click', function() {
         flag = !flag;
         refreshData(flag, limit);
+        toastr.info('Данные обновлены!', 'Успех');
     })
     await refreshData(flag, limit);
 });
