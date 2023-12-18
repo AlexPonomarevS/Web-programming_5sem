@@ -5,7 +5,13 @@ document.addEventListener('DOMContentLoaded', async function() {
     refreshButton.addEventListener('click', function() {
         flag = !flag;
         refreshData(flag, limit);
-        toastr.info('Данные обновлены!', 'Успех');
+        toastr.options = {
+            "progressBar": true, // Добавили прогресс бар
+            "closeButton": true, // Добавили кнопку закрытия
+            "showMethod": 'show', // Изменили метод показа уведомления
+            "hideMethod": 'hide' // Изменили метод закрытия уведомления
+        }
+        toastr.success('Данные обновлены!', 'Успех'); // Уведомление о успешном обновлении данных
     })
     await refreshData(flag, limit);
 });
