@@ -282,3 +282,20 @@ thead, tbody, .grid-table-tr {
     color: white;
     cursor: pointer;
 }
+
+.introjs-tooltip{
+    background-color: SkyBlue;
+}
+.introjs-tooltiptext{
+    color: white;
+}
+
+.introjs-button{
+    background-color: #549BE3;
+    border-color: white;
+    color: white;
+}
+
+.introjs-skipbutton{
+    color: white;
+}
