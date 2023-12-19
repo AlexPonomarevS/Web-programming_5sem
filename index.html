@@ -7,9 +7,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/Web-programming_5sem/css/style.css">
-        <script src="/Web-programming_5sem/scripts/script.js"></script>
-        <script src="/Web-programming_5sem/scripts/script_head.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/script_head.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css" rel="stylesheet">
+        <script src="./scripts/intro_lab7.js"></script>
         <title>Интернет-магазин "Мячики"</title>
     </head>
     <body class="body">
@@ -17,17 +21,18 @@
             <h1 class="header__title">Продажа мячей для различных видов спорта</h1>
             <nav class="header__menu">
                 <ul class="header__menu__ul">
-                    <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/index.html">Главная</a></li>
-                    <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/catalog.html">Каталог</a></li>
-                    <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cast.html">Корзина</a></li>
-                    <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cooperation.html">Сотрудничество</a></li>
-                    <li class="header__menu__ul__elem"><a class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/wishes-lab5.html">Желания</a></li>
+                    <li class="header__menu__ul__elem"><a id="Главная" class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/index.html">Главная</a></li>
+                    <li class="header__menu__ul__elem"><a id="Каталог" class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/catalog.html">Каталог</a></li>
+                    <li class="header__menu__ul__elem"><a id="Корзина" class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cast.html">Корзина</a></li>
+                    <li class="header__menu__ul__elem"><a id="Сотрудничество" class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/cooperation.html">Сотрудничество</a></li>
+                    <li class="header__menu__ul__elem"><a id="Желания" class="header__menu__ul__elem-a" href="https://alexponomarevs.github.io/Web-programming_5sem/wishes-lab5.html">Желания</a></li>
                 </ul>
             </nav>
             <blockquote class="header__blockquote">
                 <p class="header__blockquote__quote">Спорт - это жизнь!</p>
                 <cite class="header__blockquote__author">Пьер де Кубертен</cite>
             </blockquote>
+            <button type="submit" id="introButton" class="introButton">Посмотреть описание каждой страницы</button>
         </header>
         <main class="main">
             <section id="about" class="main__section about">

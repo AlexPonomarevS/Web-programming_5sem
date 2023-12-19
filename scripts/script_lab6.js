@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', async function() {
             "hideMethod": 'hide' // Изменили метод закрытия уведомления
         }
         toastr.success('Данные обновлены!', 'Успех'); // Уведомление о успешном обновлении данных
+        var element = document.querySelector('.toast-success');
+        element.style.backgroundColor = 'blue';
     })
     await refreshData(flag, limit);
 });
